@@ -13,6 +13,75 @@
       <string>LICENSES/glh_linear.txt</string>
       <key>name</key>
       <string>glh_linear</string>
+      <key>platforms</key>
+      <map>
+        <key>common</key>
+        <map>
+          <key>build_directory</key>
+          <string>glh_linear</string>
+          <key>manifest</key>
+          <array>
+            <string>include/GL</string>
+            <string>include/glh</string>
+          </array>
+          <key>name</key>
+          <string>common</string>
+        </map>
+        <key>darwin</key>
+        <map>
+          <key>configurations</key>
+          <map>
+            <key>default</key>
+            <map>
+              <key>build</key>
+              <map>
+              </map>
+              <key>default</key>
+              <string>true</string>
+              <key>name</key>
+              <string>default</string>
+            </map>
+          </map>
+          <key>name</key>
+          <string>darwin</string>
+        </map>
+        <key>linux</key>
+        <map>
+          <key>configurations</key>
+          <map>
+            <key>default</key>
+            <map>
+              <key>build</key>
+              <map>
+              </map>
+              <key>default</key>
+              <string>true</string>
+              <key>name</key>
+              <string>default</string>
+            </map>
+          </map>
+          <key>name</key>
+          <string>linux</string>
+        </map>
+        <key>windows</key>
+        <map>
+          <key>configurations</key>
+          <map>
+            <key>default</key>
+            <map>
+              <key>build</key>
+              <map>
+              </map>
+              <key>default</key>
+              <string>true</string>
+              <key>name</key>
+              <string>default</string>
+            </map>
+          </map>
+          <key>name</key>
+          <string>windows</string>
+        </map>
+      </map>
       <key>version</key>
       <string>0.0.0</string>
     </map>
