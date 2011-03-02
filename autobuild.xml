@@ -19,6 +19,25 @@
         <map>
           <key>build_directory</key>
           <string>glh_linear</string>
+          <key>configurations</key>
+          <map>
+            <key>default</key>
+            <map>
+              <key>build</key>
+              <map>
+                <key>arguments</key>
+                <array>
+                  <string>not doing anything</string>
+                </array>
+                <key>command</key>
+                <string>echo</string>
+              </map>
+              <key>default</key>
+              <string>true</string>
+              <key>name</key>
+              <string>default</string>
+            </map>
+          </map>
           <key>manifest</key>
           <array>
             <string>include/GL</string>
