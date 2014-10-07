@@ -12,7 +12,7 @@
       <key>license_file</key>
       <string>LICENSES/glh_linear.txt</string>
       <key>name</key>
-      <string>glh_linear</string>
+      <string>glh-linear</string>
       <key>platforms</key>
       <map>
         <key>common</key>
