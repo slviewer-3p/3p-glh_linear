@@ -6,11 +6,11 @@
       <key>copyright</key>
       <string>Copyright (c) 2000 Cass Everitt</string>
       <key>description</key>
-      <string>glh - is a platform-indepenedent C++ OpenGL helper library </string>
+      <string>glh - is a platform-indepenedent C++ OpenGL helper library</string>
       <key>license</key>
-      <string>	Copyright (c) 2000 NVIDIA CorporationMIT</string>
+      <string>BSD</string>
       <key>license_file</key>
-      <string>LICENSES/glh_linear.txt</string>
+      <string>LICENSES/glh-linear.txt</string>
       <key>name</key>
       <string>glh-linear</string>
       <key>platforms</key>
@@ -40,65 +40,12 @@
           </map>
           <key>manifest</key>
           <array>
+            <string>LICENSES/glh-linear.txt</string>
             <string>include/GL</string>
             <string>include/glh</string>
           </array>
           <key>name</key>
           <string>common</string>
-        </map>
-        <key>darwin</key>
-        <map>
-          <key>configurations</key>
-          <map>
-            <key>default</key>
-            <map>
-              <key>build</key>
-              <map>
-              </map>
-              <key>default</key>
-              <string>true</string>
-              <key>name</key>
-              <string>default</string>
-            </map>
-          </map>
-          <key>name</key>
-          <string>darwin</string>
-        </map>
-        <key>linux</key>
-        <map>
-          <key>configurations</key>
-          <map>
-            <key>default</key>
-            <map>
-              <key>build</key>
-              <map>
-              </map>
-              <key>default</key>
-              <string>true</string>
-              <key>name</key>
-              <string>default</string>
-            </map>
-          </map>
-          <key>name</key>
-          <string>linux</string>
-        </map>
-        <key>windows</key>
-        <map>
-          <key>configurations</key>
-          <map>
-            <key>default</key>
-            <map>
-              <key>build</key>
-              <map>
-              </map>
-              <key>default</key>
-              <string>true</string>
-              <key>name</key>
-              <string>default</string>
-            </map>
-          </map>
-          <key>name</key>
-          <string>windows</string>
         </map>
       </map>
       <key>version_file</key>
