@@ -372,15 +372,15 @@ namespace glh
   
           // Algorithm: Brian Jean
           // 
-          register real u;
-          register real v;
+          real u;
+          real v;
           vec3 Vr = direction;
           vec3 Vs = l2.direction;
-          register real Vr_Dot_Vs = Vr.dot(Vs);
-          register real detA = real(1.0 - (Vr_Dot_Vs * Vr_Dot_Vs));
+          real Vr_Dot_Vs = Vr.dot(Vs);
+          real detA = real(1.0 - (Vr_Dot_Vs * Vr_Dot_Vs));
           vec3 C = l2.position - position;
-          register real C_Dot_Vr =  C.dot(Vr);
-          register real C_Dot_Vs =  C.dot(Vs);
+          real C_Dot_Vr =  C.dot(Vr);
+          real C_Dot_Vs =  C.dot(Vs);
   
           u = (C_Dot_Vr - Vr_Dot_Vs * C_Dot_Vs)/detA;
           v = (C_Dot_Vr * Vr_Dot_Vs - C_Dot_Vs)/detA;
@@ -621,7 +621,7 @@ namespace glh
 		s[2] = &r3[0];
 		s[3] = &r4[0];
 		
-		register int i,j,p,jj;
+		int i,j,p,jj;
 		for(i=0;i<4;i++)
 		{
 			for(j=0;j<4;j++)
