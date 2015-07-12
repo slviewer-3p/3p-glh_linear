@@ -71,7 +71,13 @@ glh_linear.h
 #define     GLH_EPSILON         GLH_REAL(10e-6)
 #define     GLH_PI              GLH_REAL(3.1415926535897932384626433832795)    
 
-#define     equivalent(a,b)     (((a < b + GLH_EPSILON) && (a > b - GLH_EPSILON)) ? true : false)
+// 'equivalent(a, b)' used to be a macro in global namespace, which screwed up
+// every other use of the name 'equivalent' in any other library. Grrr.
+template <typename Ta, typename Tb>
+bool equivalent(Ta a, Tb b)
+{
+	return ((a < b + GLH_EPSILON) && (a > b - GLH_EPSILON));
+}
 
 namespace glh
 {
