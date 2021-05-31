@@ -78,7 +78,7 @@ static int ExtensionExists(const char* extName, const char* sysExts)
 
 	if (0 == strcmp(extName, "GL_VERSION_1_2")) {
 		const char *version = (const char*)glGetString(GL_VERSION);
-		if (strstr(version, "1.0") == version || strstr(version, "1.1") == version) {
+		if (!version || strstr(version, "1.0") == version || strstr(version, "1.1") == version) {
 			return FALSE;
 		} else {
 			return TRUE;
@@ -118,6 +118,10 @@ int glh_init_extensions(const char *origReqExts)
 	// build space-padded extension string
 	if (NULL == gGLHExts.mSysExts) {
 		const char *extensions = (const char*)glGetString(GL_EXTENSIONS);
+		if (!extensions)
+		{
+			return FALSE;
+		}
 		int sysExtsLen = (int)strlen(extensions);
 		const char *winsys_extensions = 0;		
 		int winsysExtsLen = 0;
